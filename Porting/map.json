@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "package": "swift-ai-voyage",
+  "status": "coarse-import",
+  "upstream": [
+    {
+      "name": "@ai-sdk/voyage",
+      "implementation": [
+        "packages/voyage/src"
+      ],
+      "tests": [
+        "packages/voyage/src/lazy-schemas.test.ts",
+        "packages/voyage/src/reranking/voyage-reranking-model.test.ts",
+        "packages/voyage/src/voyage-embedding-model.test.ts",
+        "packages/voyage/src/voyage-provider.test.ts"
+      ]
+    }
+  ],
+  "swift": {
+    "sources": [
+      "Sources/SwiftAIVoyage/VoyageModels.swift",
+      "Sources/SwiftAIVoyage/VoyageProvider.swift"
+    ],
+    "tests": [
+      "Tests/SwiftAIVoyageTests/FixtureDownloadTransport.swift",
+      "Tests/SwiftAIVoyageTests/TestSupport.swift",
+      "Tests/SwiftAIVoyageTests/VoyageProviderOptionMappingTests.swift",
+      "Tests/SwiftAIVoyageTests/VoyageProviderOptionSchemaTests.swift",
+      "Tests/SwiftAIVoyageTests/VoyageStreamingAndOptionsTests.swift"
+    ],
+    "resources": []
+  },
+  "differences": [
+    {
+      "kind": "native-adaptation",
+      "reason": "Preserve Swift async/await, Sendable, Foundation transport and existing documented gaps; see Docs/CoreV6Parity.md and PortingStatus.md."
+    }
+  ],
+  "reviewNote": "M6: Voyage runtime and focused upstream-derived tests own their package; HTTP construction is shared, options and wire policy remain local. Prior baselines and known gaps are retained.",
+  "canonicalOnlyReferences": [],
+  "canonicalDirectory": "Packages/swift-ai-voyage"
+}
