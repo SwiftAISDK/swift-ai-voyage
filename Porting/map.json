@@ -26,7 +26,8 @@
       "Tests/SwiftAIVoyageTests/TestSupport.swift",
       "Tests/SwiftAIVoyageTests/VoyageProviderOptionMappingTests.swift",
       "Tests/SwiftAIVoyageTests/VoyageProviderOptionSchemaTests.swift",
-      "Tests/SwiftAIVoyageTests/VoyageStreamingAndOptionsTests.swift"
+      "Tests/SwiftAIVoyageTests/VoyageStreamingAndOptionsTests.swift",
+      "Tests/SwiftAIVoyageTests/Weekly20261101CredentialsTests.swift"
     ],
     "resources": []
   },
