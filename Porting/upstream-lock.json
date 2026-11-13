@@ -3,20 +3,20 @@
   "packages": [
     {
       "name": "@ai-sdk/voyage",
-      "reviewedVersion": "2.0.77",
+      "reviewedVersion": "2.0.82",
       "ledgerKind": "provider",
-      "evidence": "`AIProviders.voyage`, `VoyageEmbeddingModel`, `VoyageRerankingModel`, `VoyageProviderOptionSchemaTests.swift`; 2026-11-01 delta: Docs/WeeklyUpstreamAudit20261101.json; 2026-11-08 delta: Docs/WeeklyUpstreamAudit20261108.json",
+      "evidence": "`AIProviders.voyage`, `VoyageEmbeddingModel`, `VoyageRerankingModel`, `VoyageProviderOptionSchemaTests.swift`; 2026-11-01 delta: Docs/WeeklyUpstreamAudit20261101.json; 2026-11-08 delta: Docs/WeeklyUpstreamAudit20261108.json; 2026-11-14 delta: Docs/WeeklyUpstreamAudit20261114.json",
       "reviewStatus": "imported-reviewed-with-gaps",
-      "archiveIntegrity": "sha512-3VwZp/u93etmV2qIUr2MMy+EGbpIs9kycBfVdFBIVZC9yC60BueyU7CCGObmHGn/akLgNdTt2x6EiuMPKFSeWQ==",
-      "sourceRef": "npm:@ai-sdk/voyage@2.0.77",
-      "testRef": "0f3a85f92d1ce06ccde01d662407ef83e097a712",
+      "archiveIntegrity": "sha512-PkVxQTbtKfmd5fd51ATwbbMAtkXIfr+XZjjLKiLmFgmiVrlw5q/SARrGJc2IolH0PKj97TbHkPFIfyk3fgc6FQ==",
+      "sourceRef": "npm:@ai-sdk/voyage@2.0.82",
+      "testRef": "8bc7652cdb13fc84722666eb93f45acd0d131eee",
       "testRefRelationship": "matching-release",
       "contractFamilies": [
         "EmbeddingModelV4",
         "ProviderV4",
         "RerankingModelV4"
       ],
-      "contractReview": "2026-11-08: published declarations/source and exact matching-release changed tests reviewed; native implementations, per-file dispositions and broader retained gaps are recorded in Docs/WeeklyUpstreamAudit20261108.json. Reviewed delta is not full-package or live-service parity."
+      "contractReview": "2026-11-14: verified published source/declarations and exact matching-release changed tests reviewed separately; native ports, per-file dispositions and retained gaps are recorded in Docs/WeeklyUpstreamAudit20261114.json. Delta review is not full-package or live-service parity."
     }
   ]
 }
