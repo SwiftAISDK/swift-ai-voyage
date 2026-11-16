@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
   "package": "swift-ai-voyage",
-  "version": "1.1.3",
-  "releaseID": "weekly-upstream-20261115",
+  "version": "1.2.0",
+  "releaseID": "upstream-parity-20261116",
   "source": {
-    "commit": "1e543b35e0259a5bda888665dacf2d4a7f1bb0ed",
-    "baseCommit": "1e543b35e0259a5bda888665dacf2d4a7f1bb0ed",
+    "commit": "1c457dea36be42376a6853aecd5c48ffc4942178",
+    "baseCommit": "1c457dea36be42376a6853aecd5c48ffc4942178",
     "workingTree": false,
-    "inputsSHA256": "5508ffc6347bffaed13fb29409eb856df9a7796d3ebdcb6f623d1e8871b52999"
+    "inputsSHA256": "d7b8f52add7828d7e9ed20418fe072e7db03e75483a168bb7f5c34e9d2a04a13"
   },
   "dependencies": [
     {
@@ -17,9 +17,9 @@
   ],
   "changes": [
     {
-      "id": "weekly-upstream-20261115",
-      "notes": "Align the versioned request identity with the reviewed published package while retaining native open String model IDs and existing request, response, option, error, stream and telemetry behavior. Derived TypeScript model-ID/catalog reorganizations preserve the existing native runtime policies. Reviewed npm delta: @ai-sdk/voyage 2.0.82 to 2.0.83. Validation passed: node Scripts/test-packages.mjs (55 owning packages, 2451 owning tests and 1736 compatibility tests), generation checks, 27 tooling tests, isolation/version checks, deterministic exports and minimum-dependency consumers. Documentation check/build passed (104 pages). Publication is gated by exact-source Swift 6.3.3 CI; subsequent public refs and clients are recorded in Docs/ReleaseVerification20261115.json. Paid/live-service checks were not run; this delta does not claim full-package parity.",
-      "compatibility": "Compatible versioned request identity correction; existing public selectors and dependency minimums remain. npm baselines and Swift SemVer are independent."
+      "id": "upstream-parity-20261116",
+      "notes": "Error messages come from `detail` and rerank object documents no longer escape `/`.",
+      "compatibility": "Source-compatible; changes are additive. Request bodies, results, warnings and errors change to match the reviewed upstream package."
     }
   ],
   "canonicalDirectory": "Packages/swift-ai-voyage",
@@ -28,7 +28,7 @@
       "name": "@ai-sdk/voyage",
       "reviewedVersion": "2.0.83",
       "ledgerKind": "provider",
-      "evidence": "`AIProviders.voyage`, `VoyageEmbeddingModel`, `VoyageRerankingModel`, `VoyageProviderOptionSchemaTests.swift`; 2026-11-01 delta: Docs/WeeklyUpstreamAudit20261101.json; 2026-11-08 delta: Docs/WeeklyUpstreamAudit20261108.json; 2026-11-14 delta: Docs/WeeklyUpstreamAudit20261114.json; 2026-11-15 delta: Docs/WeeklyUpstreamAudit20261115.json",
+      "evidence": "`AIProviders.voyage`, `VoyageEmbeddingModel`, `VoyageRerankingModel`, `VoyageProviderOptionSchemaTests.swift`; 2026-11-01 delta: Docs/Archive/WeeklyUpstreamAudit20261101.json; 2026-11-08 delta: Docs/Archive/WeeklyUpstreamAudit20261108.json; 2026-11-14 delta: Docs/Archive/WeeklyUpstreamAudit20261114.json; 2026-11-15 delta: Docs/Archive/WeeklyUpstreamAudit20261115.json",
       "reviewStatus": "imported-reviewed-with-gaps",
       "archiveIntegrity": "sha512-uOUlDMb9JH7Th4fW0SSQAn2VGse9XE9D7QwRdkCbbpdytmYEzyBUbvnAJ2jfGFCAMX5EIclLkDGIBdCx3vEWTQ==",
       "sourceRef": "npm:@ai-sdk/voyage@2.0.83",
@@ -39,7 +39,7 @@
         "ProviderV4",
         "RerankingModelV4"
       ],
-      "contractReview": "2026-11-15: published source/declarations and exact matching-release tests reviewed separately. Native delta scenarios, per-file dispositions, unchanged-catalog evidence and explicit remaining gaps are recorded in Docs/WeeklyUpstreamAudit20261115.json. Required checks remain a separate gate; no full-package/live-service parity claim."
+      "contractReview": "2026-11-15: published source/declarations and exact matching-release tests reviewed separately. Native delta scenarios, per-file dispositions, unchanged-catalog evidence and explicit remaining gaps are recorded in Docs/Archive/WeeklyUpstreamAudit20261115.json. Required checks remain a separate gate; no full-package/live-service parity claim."
     }
   ],
   "note": "Independent port. Imported test refs and contract review gaps retain their original status; export is not new upstream parity proof.",
@@ -58,19 +58,19 @@
     },
     {
       "canonicalPath": "Packages/swift-ai-voyage/Porting/map.json",
-      "sha256": "00d430a722db2a14a4a3d1c54b1e9f7f75f90ad20030cee2721c0c85262587ea"
+      "sha256": "2bae6e1412d5d1f77f250841ea76184216c1c83b88bdb6cad5f5ee42b4c57418"
     },
     {
       "canonicalPath": "Packages/swift-ai-voyage/README.md",
-      "sha256": "6600749d263f4ed5dd450bc1b7b470ae3cc44a40a2e2919d29f659f8a3fdb41b"
+      "sha256": "07f356bf6c130afca625a4aecdcd1b0b61509e897dd8fbf1ac786356a77b9a54"
     },
     {
       "canonicalPath": "Packages/swift-ai-voyage/Sources/SwiftAIVoyage/VoyageModels.swift",
-      "sha256": "ee82d45f406d92e530fef899860fea6adf939f8dd081ca9f9aa0f48ecc6eae01"
+      "sha256": "91a628db228888aea19f16ff62c57472a28ef0c158a8f0c26526605edb86e973"
     },
     {
       "canonicalPath": "Packages/swift-ai-voyage/Sources/SwiftAIVoyage/VoyageProvider.swift",
-      "sha256": "f4064baa28a6c6799e8bcee4773f5219ab6f5f736a7cb454d306f0774183489b"
+      "sha256": "3db0bee8ed87ff0b3156f26b2a0810c98bce2d645a573e82c8a07de50d011ef7"
     },
     {
       "canonicalPath": "Packages/swift-ai-voyage/Tests/SwiftAIVoyageTests/FixtureDownloadTransport.swift",
@@ -91,6 +91,10 @@
     {
       "canonicalPath": "Packages/swift-ai-voyage/Tests/SwiftAIVoyageTests/VoyageStreamingAndOptionsTests.swift",
       "sha256": "262421435ef4842658f92d530da03be07151067ebe7761764f718bda86f006a1"
+    },
+    {
+      "canonicalPath": "Packages/swift-ai-voyage/Tests/SwiftAIVoyageTests/VoyageUpstreamParityTests.swift",
+      "sha256": "3f4b14745fa89abe034c2e923a821c2bd860b1d022151f8eb2eebd6207296522"
     },
     {
       "canonicalPath": "Packages/swift-ai-voyage/Tests/SwiftAIVoyageTests/Weekly20261101CredentialsTests.swift",
